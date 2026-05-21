@@ -17,6 +17,9 @@ ln -s ~/dotfiles/foot/ ~/.config/
 # fuzzel (fuzzy app launcher)
 ln -s ~/dotfiles/fuzzel/ ~/.config/
 
+# sway (window manager)
+ln --symbolic ~/dotfiles/sway/ ~/.config/
+
 # swaylock (lock screen)
 ln -s ~/dotfiles/swaylock/ ~/.config/
 
@@ -27,6 +30,7 @@ ln -s ~/dotfiles/waybar/ ~/.config/
 rm ~/.config/dunst
 rm ~/.config/foot
 rm ~/.config/fuzzel
+rm ~/.config/sway
 rm ~/.config/swaylock
 rm ~/.config/waybar
 ```
