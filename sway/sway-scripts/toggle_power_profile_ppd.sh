@@ -2,11 +2,11 @@
 
 # Note: be sure to set the permissions for this file to `chmod 755 <file-name>.sh`
 
-# Requires: sudo apt install tuned
+# Requires: sudo apt install power-profiles-daemon
 
 # Function to get the current power profile
 get_current_profile() {
-    tuned-adm active | awk '{print $NF}'
+    powerprofilesctl get | awk '{print $NF}'
 }
 
 # Get the current power profile
@@ -14,14 +14,14 @@ current_profile=$(get_current_profile)
 
 # Determine the next profile to set
 case $current_profile in
-    "powersave")
+    "power-saver")
         next_profile="balanced"
         ;;
     "balanced")
-        next_profile="throughput-performance"
+        next_profile="performance"
         ;;
-    "throughput-performance")
-        next_profile="powersave"
+    "performance")
+        next_profile="power-saver"
         ;;
     *)
         next_profile="balanced"
@@ -29,4 +29,4 @@ case $current_profile in
 esac
 
 # Set the new power profile
-tuned-adm profile $next_profile
+powerprofilesctl set "$next_profile"
