@@ -1,0 +1,54 @@
+# adjust starship prompt
+alias preset-catppuccin-powerline='cp ~/dotfiles/starship/catppuccin-powerline.toml ~/.config/starship.toml'
+alias preset-plain-text-symbols='cp ~/dotfiles/starship/plain-text-symbols.toml ~/.config/starship.toml'
+
+# reboot into uefi
+alias reboot-uefi='sudo systemctl reboot --firmware-setup'
+
+# change mode of bash
+## https://dev.to/brandonwallace/how-to-use-vim-mode-on-the-command-line-in-bash-fnn
+alias vmode='set -o vi'
+alias emode='set -o emacs'
+
+# interactive mode warns before overwriting or deleting files
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# change directories
+alias dl='cd ~/Downloads'
+alias rp='cd ~/repos'
+alias ws='cd ~/workspace'
+
+# grep
+alias grep='grep --color=auto'
+
+# ls
+alias ls='ls --color=auto' # overrides alias in ~/.bashrc
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
+# git stuff
+alias gitk='gitk &'
+alias ga='git add'
+alias gap='git add -p'
+alias gcm='git commit -m'
+alias gcam='git commit --amend -m'
+alias gd='git diff'
+alias gdc='git diff --cached'	# to see changes that have been staged (checked into the index) but not yet committed
+alias glo='git log --oneline'
+alias glp='git log -p'
+alias gpull='git pull'
+alias gpush='git push'
+alias gs='git status'	# may conflict with gs for Ghostscript
+
+# ssh stuff
+alias ssha='eval $(ssh-agent) && ssh-add'
+# https://youtu.be/-Q4T9wLsvOQ?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&t=1393
+
+# terminal stuff
+alias c='clear'
+
+# update system
+alias uu='sudo apt update && sudo apt upgrade -y; sudo dnf update -y; flatpak update -y'

@@ -1,0 +1,29 @@
+" this is a comment
+" :help comment
+" source: https://stackoverflow.com/questions/2032747/how-to-comment-in-vims-config-files-vimrc
+
+" this file is loaded each time vim is started
+" :help vimrc
+
+" also load default configuration of vim, and let ~/.vimrc extend the default configuration of vim
+" otherwise things like syntax highlighting are disabled
+" :help defaults.vim
+" :help defaults.vim-explained
+" source: https://unix.stackexchange.com/questions/423301/extend-default-configuration-of-vim
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+" show line numbers in each line
+set number
+
+" enable status line and show full path of file
+" :help statusline
+" source: https://stackoverflow.com/questions/4111696/display-name-of-the-current-file-in-vim
+set laststatus=2
+set statusline=%F
+
+" disable mouse in all five modes, e.g. preventing accidental access into visual mode with mouse
+" Note: If TERM!=xterm (e.g. foot), then it will default to mouse=nvi (refer to help mouse
+" :help mouse
+" source: https://stackoverflow.com/questions/63076370/is-it-possible-to-disable-mouse-visual-mode-in-vim
+set mouse-=a
