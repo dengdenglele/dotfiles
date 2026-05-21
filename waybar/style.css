@@ -1,5 +1,19 @@
 * {
-    font-family: 'GeistMono Nerd Font Propo';
+    font-family:
+        /*
+        otf-font-awesome is not available in fedora
+        Font Awesome needs to be downloaded manually: https://docs.fontawesome.com/desktop/setup/get-started
+        Also read the waybar documentation: https://github.com/Alexays/Waybar/wiki/Installation#other
+
+        1) Try rendering every glyph with GeistMono Nerd Font Propo -> see install-scripts-fonts
+        2) If a character is missing, fall back to Font Awesome 7 Free Solid
+        3) If still missing, fall back to Font Awesome 7 Brands
+        4) Adding monospace at the end just gives an extra safety net
+        */
+        "GeistMono Nerd Font Propo",
+        "Font Awesome 7 Free Solid",
+        "Font Awesome 7 Brands",
+        monospace;
     font-size: 14px;
 }
 
