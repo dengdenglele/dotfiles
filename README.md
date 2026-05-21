@@ -14,6 +14,11 @@ ln -s ~/dotfiles/dunst/ $HOME/.config/
 # foot (terminal)
 ln -s ~/dotfiles/foot/ ~/.config/
 
+# fontconfig (specify order of fallback fonts)
+# Font Awesome icons are mapped in Unicode Private Use Area (PUA)
+# Fonts in PUA are custom, non-standard characters (private code points)
+ln -s ~/dotfiles/fontconfig/ ~/.config/
+
 # fuzzel (fuzzy app launcher)
 ln -s ~/dotfiles/fuzzel/ ~/.config/
 
@@ -29,6 +34,7 @@ ln -s ~/dotfiles/waybar/ ~/.config/
 # revert changes
 rm ~/.config/dunst
 rm ~/.config/foot
+rm ~/.config/fontconfig
 rm ~/.config/fuzzel
 rm ~/.config/sway
 rm ~/.config/swaylock
