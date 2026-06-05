@@ -32,6 +32,7 @@ alias l='ls -CF'
 # git stuff
 alias gitk='gitk &'
 alias ga='git add'
+alias gac='git add . && git commit -m'
 alias gap='git add -p'
 alias gcm='git commit -m'
 alias gcam='git commit --amend -m'
