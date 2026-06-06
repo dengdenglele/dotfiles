@@ -29,7 +29,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-# git stuff
+# git
 alias gitk='gitk &'
 alias ga='git add'
 alias gac='git add . && git commit -m'
@@ -44,11 +44,11 @@ alias gpull='git pull'
 alias gpush='git push'
 alias gs='git status'	# may conflict with gs for Ghostscript
 
-# ssh stuff
+# ssh
+## https://youtu.be/-Q4T9wLsvOQ?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&t=1393
 alias ssha='eval $(ssh-agent) && ssh-add'
-# https://youtu.be/-Q4T9wLsvOQ?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&t=1393
 
-# terminal stuff
+# terminal
 alias c='clear'
 
 # update system
