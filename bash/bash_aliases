@@ -49,10 +49,9 @@ alias gs='git status'	# may conflict with gs for Ghostscript
 alias ssha='eval $(ssh-agent) && ssh-add'
 
 # systemctl
+## https://cavecreekcoffee.com/linux-guides/systemctl-restart-vs-reload-understanding-the-critical-difference/
 alias failed='systemctl --failed'
-alias reload='sudo systemctl reload'
-alias restart='sudo systemctl restart'
-alias start='sudo systemctl start'
+alias start='sudo systemctl reload-or-restart'
 alias status='systemctl status'
 alias stop='sudo systemctl stop'
 
