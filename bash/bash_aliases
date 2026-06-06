@@ -48,6 +48,14 @@ alias gs='git status'	# may conflict with gs for Ghostscript
 ## https://youtu.be/-Q4T9wLsvOQ?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&t=1393
 alias ssha='eval $(ssh-agent) && ssh-add'
 
+# systemctl
+alias failed='systemctl --failed'
+alias reload='sudo systemctl reload'
+alias restart='sudo systemctl restart'
+alias start='sudo systemctl start'
+alias status='systemctl status'
+alias stop='sudo systemctl stop'
+
 # terminal
 alias c='clear'
 
