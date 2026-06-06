@@ -6,3 +6,4 @@
 - Force videos to only go fullscreen in sway container
   - `full-screen-api.ignore-widgets` &rarr `true`
   - [reddit](https://www.reddit.com/r/swaywm/comments/mjgjtr/keep_full_screen_inside_container/)
+  - [reddit2](https://www.reddit.com/r/swaywm/comments/1gv48ts/application_fullscreen_without_actually_making/)
