@@ -2,9 +2,6 @@
 alias preset-catppuccin-powerline='cp ~/dotfiles/starship/catppuccin-powerline.toml ~/.config/starship.toml'
 alias preset-plain-text-symbols='cp ~/dotfiles/starship/plain-text-symbols.toml ~/.config/starship.toml'
 
-# reboot into uefi
-alias reboot-uefi='sudo systemctl reboot --firmware-setup'
-
 # change mode of bash
 ## https://dev.to/brandonwallace/how-to-use-vim-mode-on-the-command-line-in-bash-fnn
 alias vmode='set -o vi'
@@ -51,6 +48,7 @@ alias ssha='eval $(ssh-agent) && ssh-add'
 # systemctl
 ## https://cavecreekcoffee.com/linux-guides/systemctl-restart-vs-reload-understanding-the-critical-difference/
 alias failed='systemctl --failed'
+alias reboot-uefi='sudo systemctl reboot --firmware-setup'
 alias start='sudo systemctl reload-or-restart'
 alias status='systemctl status'
 alias stop='sudo systemctl stop'
