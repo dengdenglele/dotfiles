@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# 
+# Uses /usr/bin/env to locate Bash via the user's PATH instead of assuming
+# a fixed location such as /bin/bash, making the script more portable.
+
+set -Eeuo pipefail
+
+if (( $# != 1 )); then
+    printf 'Usage: %s <on|off>\n' "${0##*/}" >&2
+    exit 64
+fi
+
+case "${1,,}" in
+#
+# ${1,,} expands $1 and converts it to lowercase (Bash-specific), making comparisons case-insensitive.
+    on)
+        # Execute your "on" command here
+        eduvpn-cli connect -n 1
+        ;;
+    off)
+        # Execute your "off" command here
+        eduvpn-cli disconnect
+        ;;
+    *)
+        printf 'Error: invalid argument: %q\n' "$1" >&2
+        printf 'Usage: %s <on|off>\n' "${0##*/}" >&2
+        exit 64
+        ;;
+esac
