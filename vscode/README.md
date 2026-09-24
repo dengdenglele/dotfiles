@@ -9,8 +9,21 @@
 }
 ```
 
-## References
+
+### References
 - [reddit: Disabling autoclosing quotes?](https://www.reddit.com/r/vscode/comments/vic80e/disabling_autoclosing_quotes/)
+
+
+## Config file: In `settings.json` insert the following line, to enable python symbol in activity bar
+```json
+{
+  "python.useEnvironmentsExtension": true
+}
+```
+
+### References
+- See hint in python environments extension by Microsoft
+
 
 ## Useful extensions
 - C/C++ Extension Pack by microsoft.com, includes:
