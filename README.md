@@ -1,9 +1,9 @@
 ## bash
 ```bash
 # enable sway to start in TTY1
-ln --symbolic $HOME/dotfiles/bash/bash_profile $HOME/.bash_profile
+ln -s $HOME/dotfiles/bash/bash_profile $HOME/.bash_profile
 # custom aliases (extends aliases in ~/.bashrc)
-ln --symbolic $HOME/dotfiles/bash/bash_aliases $HOME/.bash_aliases
+ln -s $HOME/dotfiles/bash/bash_aliases $HOME/.bash_aliases
 ```
 
 ## `~/.config` symbolic links
@@ -23,7 +23,7 @@ ln -s ~/dotfiles/fontconfig/ ~/.config/
 ln -s ~/dotfiles/fuzzel/ ~/.config/
 
 # sway (window manager)
-ln --symbolic ~/dotfiles/sway/ ~/.config/
+ln -s ~/dotfiles/sway/ ~/.config/
 
 # swaylock (lock screen)
 ln -s ~/dotfiles/swaylock/ ~/.config/
@@ -50,14 +50,14 @@ echo 'export PATH="$PATH:$HOME/dotfiles/bin"' >> ~/.bashrc
 Install instructions from source are [here](https://github.com/rvaiya/keyd)
 ```bash
 sudo mkdir -p /etc/keyd/
-sudo ln --symbolic ~/dotfiles/keyd/default.conf /etc/keyd/default.conf
+sudo ln -s ~/dotfiles/keyd/default.conf /etc/keyd/default.conf
 # revert changes
 sudo rm /etc/keyd/default.conf
 ```
 
 ## vim
 ```bash
-ln --symbolic $HOME/dotfiles/vim/vimrc $HOME/.vimrc
+ln -s $HOME/dotfiles/vim/vimrc $HOME/.vimrc
 # revert changes
 rm $HOME/.vimrc # Revert Vim changes
 ```
