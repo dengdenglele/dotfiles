@@ -13,6 +13,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # change directories
+alias ..='cd ..'
+alias ...='cd ../..'
 alias dl='cd ~/Downloads'
 alias rp='cd ~/repos'
 alias ws='cd ~/workspace'
