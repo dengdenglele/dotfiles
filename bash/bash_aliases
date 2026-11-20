@@ -42,6 +42,7 @@ alias glp='git log -p'
 alias gpull='git pull'
 alias gpush='git push'
 alias gs='git status'	# may conflict with gs for Ghostscript
+alias gsoft='git reset --soft HEAD~1'	# To undo the latest commit while keeping all your files and changes exactly as they are
 
 # ssh
 ## https://youtu.be/-Q4T9wLsvOQ?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&t=1393
