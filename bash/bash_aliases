@@ -1,6 +1,8 @@
 # adjust starship prompt
-alias preset-catppuccin-powerline='cp ~/dotfiles/starship/catppuccin-powerline.toml ~/.config/starship.toml'
-alias preset-plain-text-symbols='cp ~/dotfiles/starship/plain-text-symbols.toml ~/.config/starship.toml'
+alias preset-catppuccin-powerline='starship preset catppuccin-powerline -o ~/.config/starship.toml'
+alias preset-nerd-font-symbols='starship preset nerd-font-symbols -o ~/.config/starship.toml'
+alias preset-no-nerd-font='starship preset no-nerd-font -o ~/.config/starship.toml'
+alias preset-plain-text-symbols='starship preset plain-text-symbols -o ~/.config/starship.toml'
 
 # change mode of bash
 ## https://dev.to/brandonwallace/how-to-use-vim-mode-on-the-command-line-in-bash-fnn
