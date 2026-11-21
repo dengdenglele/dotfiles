@@ -1,3 +1,8 @@
+## aerospace
+```bash
+ln -s $HOME/dotfiles/aerospace/i3-like-config-example.toml $HOME/.aerospace.toml
+```
+
 ## bash
 ```bash
 # enable sway to start in TTY1
