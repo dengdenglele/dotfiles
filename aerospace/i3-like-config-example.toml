@@ -2,6 +2,9 @@
 
 config-version = 2
 
+# Start AeroSpace at login
+start-at-login = true
+
 # In i3, all workspaces are phantom
 persistent-workspaces = []
 
