@@ -22,6 +22,11 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # without requiring a click.
 focus-follows-mouse.enabled = true
 
+# You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
+# Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
+# Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
+automatically-unhide-macos-hidden-apps = true
+
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
     # Disabled, because alt-enter interferes with Firefox's "Open Address or Search in New Foreground Tab"
