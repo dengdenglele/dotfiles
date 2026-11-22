@@ -31,7 +31,8 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # git
-alias 'git?'='alias | grep git'
+alias 'g?'='alias | grep git | grep -i'
+alias 'git?'='alias | grep git -n'
 alias gitk='gitk &'
 alias ga='git add'
 alias gac='git add . && git commit -m'
