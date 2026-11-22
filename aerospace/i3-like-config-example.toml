@@ -5,8 +5,34 @@ config-version = 2
 # Start AeroSpace at login
 start-at-login = true
 
+# You can use it to add commands that run after AeroSpace startup.
+# Available commands : https://nikitabobko.github.io/AeroSpace/commands
+after-startup-command = [
+    'exec-and-forget open -a "Microsoft Teams"',
+    'exec-and-forget open -a "Firefox"',
+    'exec-and-forget sleep 3; open -a "Microsoft Outlook"',
+#    'exec-and-forget open -a "Microsoft Outlook"',
+#    'exec-and-forget sleep 10; aerospace workspace OUTLOOK',
+]
+
 # In i3, all workspaces are phantom
 persistent-workspaces = []
+
+# Assign apps on particular workspaces
+on-window-detected = [
+    {
+        if = 'test %{app-bundle-id} = org.mozilla.firefox',
+        run = ['move-node-to-workspace 1'],
+    },
+    {
+        if = 'test %{app-bundle-id} = com.microsoft.Outlook',
+        run = ['move-node-to-workspace OUTLOOK'],
+    },
+    {
+        if = 'test %{app-bundle-id} = com.microsoft.teams2',
+        run = ['move-node-to-workspace TEAMS'],
+    },
+]
 
 # i3 doesn't have "normalizations" feature that why we disable them here.
 # But the feature is very helpful.
@@ -104,6 +130,13 @@ automatically-unhide-macos-hidden-apps = true
     # Quickly toggle 'back and forth' between current and last workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
+
+    # Custom workspaces
+    alt-o = 'workspace OUTLOOK'
+    alt-t = 'workspace TEAMS'
+
+    alt-shift-o = 'move-node-to-workspace OUTLOOK'
+    alt-shift-t = 'move-node-to-workspace TEAMS'
 
 [mode.resize.binding]
     h = 'resize width -50'
