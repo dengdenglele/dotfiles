@@ -28,6 +28,11 @@ focus-follows-mouse.enabled = true
 automatically-unhide-macos-hidden-apps = true
 
 [mode.main.binding]
+
+##############################################################################################
+##### i3/sway-like keybindings ###############################################################
+##############################################################################################
+
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
     # Disabled, because alt-enter interferes with Firefox's "Open Address or Search in New Foreground Tab"
 #    alt-enter = '''exec-and-forget osascript -e \
@@ -91,6 +96,10 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-c = 'reload-config'
 
     alt-r = 'mode resize' # utilizes the section [mode.resize.binding] below
+
+##############################################################################################
+##### Custom keybindings #####################################################################
+##############################################################################################
 
     # Quickly toggle 'back and forth' between current and last workspace
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
