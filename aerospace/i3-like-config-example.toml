@@ -90,7 +90,7 @@ automatically-unhide-macos-hidden-apps = true
 
     alt-shift-c = 'reload-config'
 
-    alt-r = 'mode resize'
+    alt-r = 'mode resize' # utilizes the section [mode.resize.binding] below
 
 [mode.resize.binding]
     h = 'resize width -50'
