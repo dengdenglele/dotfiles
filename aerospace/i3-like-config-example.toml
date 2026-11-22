@@ -131,6 +131,10 @@ automatically-unhide-macos-hidden-apps = true
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
 
+    # Custom shortcut to take a screenshot. screencapture is a built-in macOS command
+    # See: https://nikitabobko.github.io/AeroSpace/goodies#screenshoot-shortcut
+    alt-shift-s = 'exec-and-forget screencapture -i -c'
+
     # Custom workspaces
     alt-o = 'workspace OUTLOOK'
     alt-t = 'workspace TEAMS'
