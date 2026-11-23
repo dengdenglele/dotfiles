@@ -21,12 +21,15 @@ alias dl='cd ~/Downloads'
 alias rp='cd ~/repos'
 alias ws='cd ~/workspace'
 
+# exit
+alias e='exit'
+
 # grep
 alias grep='grep --color=auto'
 
 # ls
 alias ls='ls --color=auto' # overrides alias in ~/.bashrc
-alias ll='ls -l'
+alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
 
