@@ -7,10 +7,11 @@ start-at-login = true
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
+# Application names for "open -a" command in "ls /Applications" (without .app suffix)
 after-startup-command = [
     'exec-and-forget open -a "Microsoft Teams"',
     'exec-and-forget open -a "Firefox"',
-    'exec-and-forget open -a "Code"',
+    'exec-and-forget open -a "Visual Studio Code"',
     'exec-and-forget sleep 5; open -a "Microsoft Outlook"',
 #    'exec-and-forget open -a "Microsoft Outlook"',
 #    'exec-and-forget sleep 10; aerospace workspace OUTLOOK',
