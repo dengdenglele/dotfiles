@@ -22,12 +22,20 @@ persistent-workspaces = []
 # Assign apps on particular workspaces
 on-window-detected = [
     {
+        if = 'test %{app-bundle-id} = com.microsoft.Outlook',
+        run = ['move-node-to-workspace 0000'],
+    },
+    {
         if = 'test %{app-bundle-id} = org.mozilla.firefox',
         run = ['move-node-to-workspace 0001'],
     },
     {
-        if = 'test %{app-bundle-id} = com.microsoft.Outlook',
-        run = ['move-node-to-workspace 0000'],
+        if = 'test %{app-bundle-id} = com.microsoft.VSCode',
+        run = ['move-node-to-workspace 0011'],
+    },
+    {
+        if = 'test %{app-bundle-id} = com.apple.Terminal',
+        run = ['move-node-to-workspace 0111'],
     },
     {
         if = 'test %{app-bundle-id} = com.microsoft.teams2',
