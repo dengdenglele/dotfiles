@@ -18,7 +18,9 @@ after-startup-command = [
 
 # In i3, all workspaces are phantom
 # If bracket is left blank, aerospace always starts with workspace '1'
-persistent-workspaces = []
+persistent-workspaces = [
+    '0001'
+]
 
 # Assign apps on particular workspaces
 on-window-detected = [
