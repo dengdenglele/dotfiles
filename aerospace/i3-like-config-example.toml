@@ -177,3 +177,21 @@ gaps.outer.right =      0
     enter = 'mode main'
     esc = 'mode main'
     alt-r = 'mode main'
+
+##############################################################################################
+##### Workspace to monitor settings  #########################################################
+##############################################################################################
+
+# Check for available displays and numbers with following command
+# aerospace list-monitor
+[workspace-to-monitor-force-assignment]
+    0001 = 'main'
+    0010 = 'main'
+    0011 = 'main'
+    0100 = 'main'
+    0101 = 'main'
+    0110 = 'main'
+    0111 = ['secondary']
+    1000 = ['secondary']
+    1001 = ['secondary']
+    0000 = ['secondary']
