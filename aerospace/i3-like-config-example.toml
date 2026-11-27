@@ -45,7 +45,7 @@ on-window-detected = [
     },
     {
         if = 'test %{app-bundle-id} = com.apple.Terminal',
-        run = ['move-node-to-workspace 0111'],
+        run = ['move-node-to-workspace 1000'],
     },
     {
         if = 'test %{app-bundle-id} = com.microsoft.teams2',
